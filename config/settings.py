@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-ouls3a84=kvc6h10i7fp13*@*6-%@zpekq&(oeq#^pps&xvxjj
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'crud-django-postgres.onrender.com',
+    'crud-asistencia.onrender.com',
     'localhost',
     '127.0.0.1',
 ]
