@@ -11,10 +11,10 @@ def iniciar_sesion(request):
             password = request.POST['password']
         )
       
-    if usuario is not None:
-        login(request, usuario)
-        destino = request.GET.get("next", "/asistencia/listar") # Redirigir a la página de inicio después del login
-        return redirect(destino)
+        if usuario is not None:
+            login(request, usuario)
+            destino = request.GET.get("next", "/asistencia/lista") # Redirigir a la página de inicio después del login
+            return redirect(destino)
 
         return render(
         request,
